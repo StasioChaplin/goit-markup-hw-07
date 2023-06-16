@@ -1,5 +1,10 @@
 @media screen and (min-width: 428px) {
     .container {
         width: 428px;
-    };
+        
+    }
+
+    .hero {
+        width: 428px;
+    }
 }
