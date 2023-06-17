@@ -51,7 +51,7 @@ img {
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
-  margin: 0 auto;
+  /* margin: 0 auto; */
 }
 
 .contacts {
@@ -168,10 +168,9 @@ img {
 /* =================== HERO ================= */
 
 .hero {
-  height: 600px;
-  max-width: 1440px;
+  display: flex;
   background-color: var(--secondary-color);
-  padding: 188px 0;
+  padding: 112px 0;
   /* background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
@@ -184,9 +183,10 @@ img {
 }
 
 .hero-title {
-  width: 320px;
+  padding-left: 39px;
+  padding-right: 39px;
   font-family: var(--main-font);
-  margin: 0 auto 48px;
+  margin: 0 auto 72px;
   color: var(--nondescript-color);
   font-weight: 700;
   font-size: 36px;
@@ -238,15 +238,19 @@ img {
 
 .features-container,
 .team-container {
-  padding: 120px 0;
+  display: flex;
+  max-width: 428px;
+  padding: 96px 0;
+  margin: 0 auto;
 }
 
 .features-list,
 .functions-list,
 .team-list {
   display: flex;
-  gap: 24px;
+  gap: 72px;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .features-icon {
@@ -261,9 +265,10 @@ img {
 
 .features-list-heading {
   display: block;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
+  font-weight: 700;
+  font-size: 36px;
+  text-transform: capitalize;
+  line-height: 1.11;
   letter-spacing: 0.02em;
   color: var(--secondary-color);
   margin-bottom: 8px;
@@ -278,6 +283,8 @@ img {
 }
 
 .features-text {
+  font-weight: 500;
+  font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--main-color);
