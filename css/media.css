@@ -7,4 +7,10 @@
     .hero {
         width: 428px;
     }
+
+    .footer {
+        display: flex;
+        margin: 0 auto;
+        width: 428px;
+    }
 }
