@@ -1,5 +1,11 @@
 /* ========================================== MOB */
 
+@media screen and (max-width: 427px) {
+  .mob-contacts-phone {
+    font-size: 24px;
+  }
+}
+
 @media screen and (min-width: 428px) {
   .container {
     width: 428px;
@@ -51,6 +57,10 @@
     display: inline-block;
     font-style: normal;
     margin-left: auto;
+  }
+
+  .menu-open-btn {
+    display: none;
   }
 
   .hero {

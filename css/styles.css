@@ -64,6 +64,10 @@ img {
   color: var(--primary-brand-color);
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 /* ======================= HEADER ======================== */
 
 .header {
@@ -167,6 +171,98 @@ img {
   color: var(--active-contact-color);
 }
 
+/* =================== MENU ================= */
+
+.menu-open-btn {
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  stroke: var(--secondary-color);
+  margin-left: auto;
+  padding: 0;
+}
+
+.mobile-menu {
+  position: fixed;
+  z-index: 13;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--nondescript-color);
+  top: 0;
+  left: 0;
+  padding: 24px 24px 40px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: auto;
+}
+
+.mobile-menu-close {
+  display: block;
+  margin-left: auto;
+  width: 24px;
+  height: 24px;
+  background-color: var(--border-color);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  cursor: pointer;
+  margin-bottom: 32px;
+}
+
+.mobile-menu-nav,
+.mob-contacts-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.mob-nav-item {
+  color: var(--secondary-color);
+}
+
+.mob-nav-link {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: 0.72px;
+  text-transform: capitalize;
+  color: inherit;
+}
+
+/* ====================================================== ? ? ? */
+
+.mobile-menu-nav:first-child {
+  color: var(--active-contact-color);
+}
+
+.mob-contacts {
+  font-style: normal;
+  margin-bottom: 48px;
+  margin-top: 40px;
+}
+
+.mob-contacts-phone {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: 0.72px;
+  text-transform: capitalize;
+  color: var(--primary-brand-color);
+}
+
+.mob-contacts-mail {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.4px;
+  color: var(--main-color);
+}
+
 /* =================== HERO ================= */
 
 .hero {
@@ -190,10 +286,10 @@ img {
   (min-resolution: 2dppx) {
   .hero {
     background-image: linear-gradient(
-      rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7)
-    ),
-    url(../images/hero-bimg-mob-2x.jpg);
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero-bimg-mob-2x.jpg);
   }
 }
 
