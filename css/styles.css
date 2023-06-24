@@ -54,11 +54,6 @@ img {
   margin: 0 auto;
 }
 
-.contacts {
-  font-style: normal;
-  margin-left: auto;
-}
-
 .logo {
   font-family: var(--logo-font);
   font-weight: 800;
@@ -73,8 +68,7 @@ img {
 
 .header {
   background: var(--nondescript-color);
-  padding-top: 24px;
-  padding-bottom: 24px;
+  padding: 24px 0;
   display: flex;
   border-bottom: 1px solid #e7e9fc;
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
@@ -105,8 +99,11 @@ img {
 }
 
 .main-nav {
-  display: flex;
-  gap: 40px;
+  display: none;
+}
+
+.contacts {
+  display: none;
 }
 
 .nav-link {
@@ -142,16 +139,21 @@ img {
 }
 
 .contacts-nav {
+  flex-direction: column;
   display: flex;
-  gap: 40px;
+  gap: 12px;
+}
+
+.contacts-item {
+  height: 14px;
 }
 
 .contacts-link {
   font-family: var(--main-font);
   font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.48px;
   color: var(--main-color);
   transition-property: color;
   transition-duration: 250ms;
