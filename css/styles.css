@@ -139,7 +139,7 @@ img {
   border-radius: 2px;
   background-color: var(--active-contact-color);
   margin-top: 21px;
-  bottom: -1px;
+  bottom: -2px;
 }
 
 .contacts-nav {
