@@ -8,17 +8,17 @@
 
 @media screen and (min-width: 428px) {
   .container {
-    width: 428px;
+    max-width: 428px;
   }
 
   .hero {
-    width: 428px;
+    max-width: 428px;
   }
 
   .footer {
     display: flex;
     margin: 0 auto;
-    width: 428px;
+    max-width: 428px;
   }
 }
 
@@ -45,7 +45,7 @@
 
 @media screen and (min-width: 768px) {
   .container {
-    width: 768px;
+    max-width: 768px;
   }
 
   .main-nav {
@@ -64,7 +64,7 @@
   }
 
   .hero {
-    width: 768px;
+    max-width: 768px;
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
@@ -125,7 +125,7 @@
   }
 
   .footer {
-    width: 768px;
+    max-width: 768px;
     padding: 96px 0;
   }
 
@@ -155,7 +155,7 @@
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1439px) {
+@media screen and (min-width: 768px) and (max-width: 1157px) {
   .header {
     padding: 16px 0;
   }
@@ -171,7 +171,7 @@
   }
 }
 
-@media screen and (max-width: 1439px) {
+@media screen and (max-width: 1157px) {
   .features-list-heading {
     text-align: center;
   }
@@ -184,9 +184,9 @@
 
 /* ========================================= DESKTOP */
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1158px) {
   .container {
-    width: 1158px;
+    max-width: 1158px;
   }
 
   .contacts-nav {
@@ -202,12 +202,14 @@
 
   .hero {
     padding: 188px 0;
-    width: 1440px;
+    max-width: 1440px;
+    max-height: 600px;
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
       url(../images/hero-bimg-desk.jpg);
+      overflow: hidden;
   }
 
   @media (min-device-pixel-ratio: 2),
@@ -265,7 +267,7 @@
   }
 
   .footer {
-    width: 1440px;
+    max-width: 1440px;
   }
 
   .footer-left {
