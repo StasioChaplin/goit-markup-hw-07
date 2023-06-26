@@ -221,22 +221,16 @@ img {
   gap: 40px;
 }
 
-.mob-nav-item {
-  color: var(--secondary-color);
-}
-
 .mob-nav-link {
   font-size: 36px;
   font-weight: 700;
   line-height: 1.1;
   letter-spacing: 0.72px;
   text-transform: capitalize;
-  color: inherit;
+  color: var(--secondary-color);
 }
 
-/* ====================================================== ? ? ? */
-
-.mobile-menu-nav:first-child {
+.mob-active {
   color: var(--active-contact-color);
 }
 
@@ -261,6 +255,12 @@ img {
   line-height: 1.2;
   letter-spacing: 0.4px;
   color: var(--main-color);
+}
+
+.mob-soc-list {
+  max-width: 328px;
+  display: flex;
+  gap: 56px;
 }
 
 /* =================== HERO ================= */
