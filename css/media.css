@@ -114,11 +114,6 @@
     letter-spacing: 1.12px;
   }
 
-  .features-container,
-  .team-container {
-    max-width: 768px;
-  }
-
   .features-list,
   .team-list {
     gap: 24px;
