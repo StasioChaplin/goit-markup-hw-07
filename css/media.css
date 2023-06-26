@@ -10,6 +10,12 @@
   }
 }
 
+@media screen and (min-width: 394px) {
+  .mob-soc-list {
+    gap: 56px;
+  }
+}
+
 @media screen and (min-width: 428px) {
   .container {
     max-width: 428px;
@@ -192,6 +198,10 @@
     text-align: center;
   }
 
+  .features-text {
+    font-weight: 500;
+  }
+
   .customers-list {
     flex-wrap: wrap;
     row-gap: 72px;
@@ -224,6 +234,10 @@
 
   .features-list-item {
     width: calc((100% - 72px) / 4);
+  }
+
+  .features-list-heading {
+    font-weight: 500;
   }
 
   .features-icon {
