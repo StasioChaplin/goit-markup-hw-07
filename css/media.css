@@ -38,7 +38,6 @@
   .footer {
     display: flex;
     margin: 0 auto;
-    /* max-width: 428px; */
   }
 }
 
@@ -148,7 +147,6 @@
   }
 
   .footer {
-    /* max-width: 768px; */
     padding: 96px 0;
   }
 
